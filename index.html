@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecom site</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .sidenav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: lightblue;
+            overflow-x: hidden;
+            transition: .5s;
+            
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 8px;
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+            transition: .5s;
+        }</style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="top-left-nav">
+                <li class="nav-list">
+                  <a class="nav-list-a" href="/deals">Deals</a>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-list-a" href="/top brands">Top Brands</a>
+                </li>
+                <li class="nav-list"><a class="nav-list-a" href="/trending">Trending</a></li>
+                <li class="nav-list"><a class="nav-list-a" href="/help and contact">Help & Contact</a></li>
+        
+            </ul>
+            <ul>
+                <ul class="top-right-nav">
+                    <li class="nav-list">
+                      <a class="nav-list-a" href="">Log In/Sign up</a>
+                    </li>
+                    <li class="nav-list">
+                        <a class="nav-list-a" href="">Account</a>
+                    </li>
+                    <li class="nav-list-img"><a class="nav-list-a" href="cart"> <img  width="22.5px" src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png"></a></li>
+                
+            </ul>
+        </nav>
+        
+
+        <nav class="lower-nav">
+            <span class="popupside" style="font-size:40px;cursor:pointer" id="myMenu" onclick="openNav()">&#9776; </span>
+            <img class="banana-img" width="60px"src="https://pngfolio.com/images/all_img/1634910628banana-png.png"><span class="company-name"> banana store</span>
+            <form class="search-form" action="/search">
+                <input size="30px" type="text" name="search-term" placeholder="search terms">
+                <button type="submit"><i class="material-icons">search</i></button>
+              </form>
+              <a class="credit-offer" href="/credit">0% Financing 24 Months</a>
+       </nav>
+    </header>
+       <main>
+        <nav class="sidebar">
+            <!-- <a class="sidebar-buttons" href="/clothing-shoes">clothing &amp; shoes</a>
+            <a class="sidebar-buttons" href="/electronics">electronics</a>
+            <a class="sidebar-buttons" href="/books">books</a>
+            <a class="sidebar-buttons" href="/food-drinks">food &amp; drinks</a>
+            <a class="sidebar-buttons" href="/appliances">appliances</a>
+            <a class="sidebar-buttons" href="/sports-outdoor">sports &amp; outdoor</a>
+            <a class="sidebar-buttons" href="/toys-baby">toys &amp; baby</a>
+            <a class="sidebar-buttons" href="/garden">garden</a> -->
+        </nav>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "320px";
+            }
+            
+            window.addEventListener('click', function(e){   
+              if (!document.getElementById('mySidenav').contains(e.target) && !document.getElementById('myMenu').contains(e.target)){
+                // Clicked in box
+               document.getElementById("mySidenav").style.width = "0px";  
+              } else{
+               
+             // document.getElementById("mySidenav").style.width = "0px";
+              }
+            });
+            
+            </script>
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="/clothing-shoes">clothing</a>
+                <a href="/electronics">electronics</a>
+                <a href="/books">books</a>
+                <a href="/food-drinks">food</a>
+                <a href="/appliances">appliances</a>
+                <a href="/sports-outdoor">sports</a>
+                <a href="/toys-baby">toys &amp; baby</a>
+                <a href="/garden">garden</a>
+            </div>
+            
+       </main>
+
+       <div class="products">
+        <section class="items">
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+            <div class="item">
+              <h3 class="item-name"><span>Product Name</span></h3>
+              <img class="item-image" src="https://png.pngitem.com/pimgs/s/694-6948357_banana-transparent-background-banana-transparent-png-png-download.png" alt="product-name">
+              <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus facere fuga aliquam, accusamus quisquam quae temporibus tenetur rerum consequatur numquam blanditiis neque! Molestias, nobis sapiente vero maxime tempora illum!</p>
+              <p class="fact-line"><span class="fact-name">Price: </span><span>$27.99</span></p>
+              <p class="addtocart"><a style="color:white;" href="cart">ADD TO CART</a></p>
+            </div>
+          </section>
+        </div>
+        <footer>
+            <section>
+              <h2>Customer Care</h2>
+              <a href="">Account</a>
+              <a href="">Orders</a>
+              <a href="">Policies</a>
+              <a href="">Credit</a>
+              <a href="">Help</a>
+            </section>
+            <section>
+              <h2>Sales</h2>
+              <a href="">Become a Seller</a>
+              <a href="">Manage Your Products</a>
+              <a href="">Advertise</a>
+            </section>
+            <section>
+              <h2>About Us</h2>
+              <a href="">Careers</a>
+              <a href="">Blog</a>
+              <a href="">Our History</a>
+              <a href="">Press Releases</a>
+              <a href="">Take a Tour</a>
+            </section>
+          </footer>
+
+</body>
+</html>
